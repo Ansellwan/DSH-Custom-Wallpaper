@@ -1,0 +1,67 @@
+{
+  "name": "dsh-ui-wallpaper",
+  "version": "1.0.6",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ansellwan/DSH-Custom-Wallpaper.git"
+  },
+  "homepage": "https://github.com/Ansellwan/DSH-Custom-Wallpaper#readme",
+  "bugs": {
+    "url": "https://github.com/Ansellwan/DSH-Custom-Wallpaper/issues"
+  },
+  "description": "DeepSeek Harness 自定义壁纸插件：在设置面板里选本机图片当背景，可调不透明度/模糊/界面通透度/压暗，即时预览。A DeepSeek Harness Web wallpaper plugin with a dedicated Settings section.",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "LICENSE",
+    "README.md",
+    "locale/*.json",
+    "tools/*.mjs"
+  ],
+  "icon": "./icon.svg",
+  "meta": {
+    "title": "自定义壁纸",
+    "description": "在设置里选一张本机图片当背景，可调透明度、模糊、界面通透度。"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-settings"
+      ]
+    }
+  },
+  "keywords": [
+    "dsh-plugin",
+    "dsh",
+    "deepseek-harness",
+    "wallpaper",
+    "background",
+    "theme"
+  ],
+  "license": "MIT",
+  "author": "Ansellwan",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "check": "node tools/check-plugin.mjs .",
+    "test": "node tools/smoke-client.mjs client.js",
+    "prepublishOnly": "node tools/check-plugin.mjs . && node tools/smoke-client.mjs client.js"
+  }
+}
