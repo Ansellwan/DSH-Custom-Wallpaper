@@ -5,7 +5,7 @@
 [![npm downloads](https://img.shields.io/npm/dm/dsh-ui-wallpaper)](https://www.npmjs.com/package/dsh-ui-wallpaper)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-> 一句话价值：装上它，你的 DeepSeek Harness 桌面版界面立刻拥有自定义壁纸——本机任意图片做背景，透明度、模糊、界面通透度实时可调，即时预览。
+> 一句话价值：装上它，你的 DeepSeek Harness 桌面版界面立刻拥有自定义壁纸——本机任意图片做背景，透明度、虚化、界面通透度实时可调，即时预览。
 
 A DeepSeek Harness (DSH) community plugin that lets you set any local image as the app wallpaper, with real-time controls for opacity, blur, surface translucency and dimming.
 
@@ -56,7 +56,7 @@ dsh plugin --profile desktop add dsh-ui-wallpaper@<新版本号>
 ## 怎么用
 
 1. 打开左下角 **设置**，导航里点 **壁纸**
-2. 点「选择图片」挑一张本机图片；也可以把图片**拖进面板**，或在壁纸页内按 **Ctrl+V**、点「读剪贴板」
+2. **点击虚线框**挑一张本机图片；也可以把图片**拖进面板**，或在壁纸页内按 **Ctrl+V** 直接换
 3. 拖动滑杆微调，面板背后即时预览
 
 | 控件 | 作用 | 建议 |
@@ -64,11 +64,9 @@ dsh plugin --profile desktop add dsh-ui-wallpaper@<新版本号>
 | 铺满方式 | 铺满 / 完整显示 / 平铺 / 居中 | 大图用「铺满」 |
 | 壁纸不透明度 | 壁纸自身的浓淡 | 60–100% |
 | 界面通透度 | 界面底色让出多少给壁纸，**决定壁纸是否看得见** | 0–30%，越大壁纸越明显、文字对比越低 |
-| 模糊 | 壁纸整体虚化 | 0–12px |
 | 压暗 | 压暗壁纸，深色主题下更耐看 | 0–20% |
 | 压底薄纱 | 壁纸与界面之间的深色半透明底（提对比度下限） | 15–30% |
 | 薄纱虚化 | 薄纱背后的 backdrop 虚化，负责抹掉细节 | 8–16px |
-| 壁纸饱和 | 壁纸色彩浓度 | 80–100% |
 
 > **粘贴只在壁纸页内生效**：只有焦点位于壁纸设置面板时，Ctrl+V 才被壁纸接管，不会影响你在对话框、编辑器等处的正常粘贴（早期版本的全局粘贴监听事故已修复，详见下文「粘贴闸门」）。
 
