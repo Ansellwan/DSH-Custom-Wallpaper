@@ -1,6 +1,9 @@
 # DSH 自定义壁纸插件（DSH Custom Wallpaper）
 
 [![Listed on dsh-plugin.org](https://dsh-plugin.org/badges/listed.svg)](https://dsh-plugin.org/plugins/Ansellwan/DSH-Custom-Wallpaper)
+[![npm version](https://img.shields.io/npm/v/dsh-ui-wallpaper)](https://www.npmjs.com/package/dsh-ui-wallpaper)
+[![npm downloads](https://img.shields.io/npm/dm/dsh-ui-wallpaper)](https://www.npmjs.com/package/dsh-ui-wallpaper)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 > 一句话价值：装上它，你的 DeepSeek Harness 桌面版界面立刻拥有自定义壁纸——本机任意图片做背景，透明度、模糊、界面通透度实时可调，即时预览。
 
